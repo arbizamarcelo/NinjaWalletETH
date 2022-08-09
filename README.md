@@ -2,8 +2,14 @@
 
 #### Pasos a seguir: 
 1 - Clonar repositorio: 
--       npm install 
--       
+-       https://github.com/Marceloarbiza/NinjaWalletETH.git 
+
+2 - Instalar dependencias: 
+-       npm install
+
+3 - Dentro de la carpeta del proyeco, iniciarlo:
+-       npm start 
+
 
 Para el desarrollo de la aplicación se utilizaron las siguientes tecnologías: 
 
