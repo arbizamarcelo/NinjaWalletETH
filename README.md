@@ -1,5 +1,10 @@
 # :ninja: Ninja Wallet 
 
+#### Pasos a seguir: 
+1 - Clonar repositorio: 
+-       npm install 
+-       
+
 Para el desarrollo de la aplicación se utilizaron las siguientes tecnologías: 
 
 *NodeJS* 
