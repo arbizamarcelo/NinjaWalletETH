@@ -1,6 +1,6 @@
 # :ninja: Ninja Wallet 
 
-#### Pasos a seguir: 
+### Pasos a seguir: 
 1 - Clonar repositorio: 
 -       https://github.com/Marceloarbiza/NinjaWalletETH.git 
 
@@ -10,6 +10,7 @@
 3 - Dentro de la carpeta del proyeco, iniciarlo:
 -       npm start 
 
+## :book: Read
 
 Para el desarrollo de la aplicación se utilizaron las siguientes tecnologías: 
 
