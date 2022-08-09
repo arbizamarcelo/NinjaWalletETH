@@ -1,6 +1,7 @@
 # :ninja: Ninja Wallet 
 
-![Text](/images/app0.png)
+![Text](/images/app0.png)![Text](/images/app1.png) 
+
 
 ### Pasos a seguir: 
 1 - Clonar repositorio: 
@@ -40,7 +41,7 @@ Todo el funcionamiento se desarrolla en la misma aplicación, por lo que la segu
 
 ## ARQUITECTURA
 
-![Text](/images/diagramaredux.png)
+![Text](/images/arquitectura.png)
  
 ## Arquitectura
 ### HomePage
