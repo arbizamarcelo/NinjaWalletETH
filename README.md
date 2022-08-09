@@ -1,5 +1,7 @@
 # :ninja: Ninja Wallet 
 
+![Text](/images/app0.png)
+
 ### Pasos a seguir: 
 1 - Clonar repositorio: 
 -       https://github.com/Marceloarbiza/NinjaWalletETH.git 
@@ -24,8 +26,6 @@ Para el desarrollo de la aplicación se utilizaron las siguientes tecnologías:
 
 *Ethers.js* 
 
-![Text](/images/app0.png)
-
  
 ## Resumen
 Se utiliza React Native ya que el cliente requiere que utilicemos React , mediante este podemos utilizar sus características nativas en el desarrollo mobile. Expo nos brinda la interfaz para poder visualizar el desarrollo de la aplicación además de contar con una gran variedad de herramientas que facilitan el desarrollo.
@@ -33,6 +33,14 @@ Redux además de ser requerido por el cliente nos brinda la posibilidad de centr
 Ethers.js es la librería que utilizamos como puente para interactuar con la EVM. Además de contar con otras funciones que nos facilitan la creación de la Wallet, tales como createRandom(), getHistory(address), getDefaultProvider(), etc.
 El cliente también solicitó que se utilizara MongoDB. Este no fue utilizado para evitar la centralización de la aplicación.
 Todo el funcionamiento se desarrolla en la misma aplicación, por lo que la seguridad de la Wallet dependerá exclusivamente del usuario y no de externos. Dentro de la aplicación, los datos se guardan de manera encriptada y solo se podrá acceder a ellos si el usuario se encuentra logueado. Para el caso de solicitar ver la clave privada o la frase semilla, se vuelve a pedir al usuario que ingrese la contraseña como una doble medida de seguridad.
+
+## DIAGRAMA REDUX 
+
+![Text](/images/diagramaredux.png)
+
+## ARQUITECTURA
+
+![Text](/images/diagramaredux.png)
  
 ## Arquitectura
 ### HomePage
