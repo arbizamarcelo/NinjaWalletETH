@@ -1,4 +1,4 @@
-# Ninja Wallet 
+# :ninja: Ninja Wallet 
 
 Para el desarrollo de la aplicación se utilizaron las siguientes tecnologías:
 **NodeJS**
@@ -17,8 +17,8 @@ Todo el funcionamiento se desarrolla en la misma aplicación, por lo que la segu
 ## Arquitectura
 ### HomePage
 En esta página se presentarán dos opciones:
--          Create Wallet
--          Import Wallet 
+>> Create Wallet
+>> Import Wallet 
 
 ### Create Wallet -> LoginScreen 
 
@@ -52,7 +52,7 @@ Una vez en esta página, podremos acceder a todas las funcionalidades de la wall
 Como primer paso deberemos escoger un proveedor y la clave publica de la wallet que vamos a utilizar. En un principio la única clave pública que aparecerá disponible será la de la wallet que se creó.
 Como primera opción tendremos 
 
-#### :pushpin:TRANSFER: 
+#### :pushpin: TRANSFER: 
 
 Este método desencripta la wallet que coincida con la clave pública seleccionada, de esta forma podremos acceder a la clave privada, necesaria para poder realizar la transacción. Deberemos tener seleccionado el proveedor por el cual se conectará la wallet para realizar la transferencia. También definiremos el monto (en ETH) y la clave publica a la cual transferir.
 Para realizar la transacción se utiliza la función ethers.wallet.sendTransaction(transaction).
@@ -63,16 +63,16 @@ La firma de la transacción la realiza la misma función de manera interna.
 Anteriormente se utilizaba la función signTransaction(transaction) para firmarla antes de
 poder transferir.
  
-#### :pushpin:GET BALANCE: 
+#### :pushpin: GET BALANCE: 
 
 Toma la clave pública seleccionada y el proveedor, y a través de la función
 provider.getBalance(address), se conectará con el contrato accediendo a la función balanceOf para obtener el balance de dicha clave publica para ese contrato.
  
-#### :pushpin:ADD WALLET: 
+#### :pushpin: ADD WALLET: 
 
 Esta opción nos permite crear una nueva wallet como lo hicimos al principio.
  
-#### :pushpin:IMPORT WALLET: 
+#### :pushpin: IMPORT WALLET: 
 
 Esta opción utiliza la función ethers.Wallet.(privateKey), para traer una wallet a partir de una
 clave privada que le pasemos. Esta se encriptará y guardará en el archivo wallet.json.
@@ -84,7 +84,7 @@ semilla) según la opción.
  
 Aquellas wallets que se importen no tendrán frase semilla.
 
-#### :pushpin:HISTORY: 
+#### :pushpin: HISTORY: 
 
 Por medio de la función etherscanProvider.getHistory(address) que se conecta con la API de Etherscan para dicho proveedor, podremos obtener el historial de transacciones de la clave publica seleccionada.
  
