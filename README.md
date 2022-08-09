@@ -117,9 +117,15 @@ m=frase, 44 es la HD key system, 60 representa a la red de Ethereum, 0 este nume
  
 Bibliografía: 
 
-https://docs.ethers.io/v5/
-https://jetsoanalin.github.io/EthersJsTutorialJetso/
-https://julien-maffre.medium.com/what-is-an-ethereum-keystore-file-86c8c5917b97
-https://ethereum.stackexchange.com/questions/70017/can-someone-explain-the-meaning-of-derivation-path-in-wallet-in-plain-english-s
-https://reactnative.dev/
-https://expo.dev/
+https://docs.ethers.io/v5/ 
+
+https://jetsoanalin.github.io/EthersJsTutorialJetso/ 
+
+https://julien-maffre.medium.com/what-is-an-ethereum-keystore-file-86c8c5917b97 
+
+https://ethereum.stackexchange.com/questions/70017/can-someone-explain-the-meaning-of-derivation-path-in-wallet-in-plain-english-s 
+
+https://reactnative.dev/ 
+
+https://expo.dev/ 
+
