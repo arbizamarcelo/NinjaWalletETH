@@ -24,6 +24,8 @@ Para el desarrollo de la aplicación se utilizaron las siguientes tecnologías:
 
 *Ethers.js* 
 
+![Text](/images/app0.png)
+
  
 ## Resumen
 Se utiliza React Native ya que el cliente requiere que utilicemos React , mediante este podemos utilizar sus características nativas en el desarrollo mobile. Expo nos brinda la interfaz para poder visualizar el desarrollo de la aplicación además de contar con una gran variedad de herramientas que facilitan el desarrollo.
