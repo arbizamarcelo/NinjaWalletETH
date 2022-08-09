@@ -50,8 +50,10 @@ El string ingresado por el usuario se compa con la frase mnemónica obtenida de 
 
 Una vez en esta página, podremos acceder a todas las funcionalidades de la wallet. Las mismas serán detalladas aquí.
 Como primer paso deberemos escoger un proveedor y la clave publica de la wallet que vamos a utilizar. En un principio la única clave pública que aparecerá disponible será la de la wallet que se creó.
-Como primera opción tendremos
-TRANSFER:
+Como primera opción tendremos 
+
+#### :pushpin:TRANSFER: 
+
 Este método desencripta la wallet que coincida con la clave pública seleccionada, de esta forma podremos acceder a la clave privada, necesaria para poder realizar la transacción. Deberemos tener seleccionado el proveedor por el cual se conectará la wallet para realizar la transferencia. También definiremos el monto (en ETH) y la clave publica a la cual transferir.
 Para realizar la transacción se utiliza la función ethers.wallet.sendTransaction(transaction).
 Como se comentó anteriormente ethers.js es un puente para poder interactuar con la EVM.
@@ -61,14 +63,17 @@ La firma de la transacción la realiza la misma función de manera interna.
 Anteriormente se utilizaba la función signTransaction(transaction) para firmarla antes de
 poder transferir.
  
-#### GET BALANCE:
+#### :pushpin:GET BALANCE: 
+
 Toma la clave pública seleccionada y el proveedor, y a través de la función
 provider.getBalance(address), se conectará con el contrato accediendo a la función balanceOf para obtener el balance de dicha clave publica para ese contrato.
  
-#### ADD WALLET:
+#### :pushpin:ADD WALLET: 
+
 Esta opción nos permite crear una nueva wallet como lo hicimos al principio.
  
-#### IMPORT WALLET:
+#### :pushpin:IMPORT WALLET: 
+
 Esta opción utiliza la función ethers.Wallet.(privateKey), para traer una wallet a partir de una
 clave privada que le pasemos. Esta se encriptará y guardará en el archivo wallet.json.
 PRIVATE KEY y MNEMONIC:
@@ -79,10 +84,12 @@ semilla) según la opción.
  
 Aquellas wallets que se importen no tendrán frase semilla.
 
-#### HISTORY:
+#### :pushpin:HISTORY: 
+
 Por medio de la función etherscanProvider.getHistory(address) que se conecta con la API de Etherscan para dicho proveedor, podremos obtener el historial de transacciones de la clave publica seleccionada.
  
-## Import Wallet -> LoginImportScreen
+## Import Wallet -> LoginImportScreen 
+
 Aquí podremos crear una cuenta nueva e importar una wallet mediante su frase semilla.
 Al igual que con Create Wallet se creará una key con la password y con esta key se encriptará la wallet y se guardará en el archivo wallet.json
 Para poder importar la wallet a partir de la frase semilla se utiliza la función ethers.Wallet.fromMnemonic(mnemonic, path).
@@ -90,7 +97,8 @@ La ruta BIP por defecto será m/44'/60'/0'/0/0. Y por defecto las palabras estar
 m=frase, 44 es la HD key system, 60 representa a la red de Ethereum, 0 este numero indica que comenzara en 0 y se incrementará, indica la jerarquía, 0 este número no suele usarce en Ethereum, 0 este número nos indica el idioma de las palabras en este caso serán en ingles.
  
  
-Bibliografía:
+Bibliografía: 
+
 https://docs.ethers.io/v5/
 https://jetsoanalin.github.io/EthersJsTutorialJetso/
 https://julien-maffre.medium.com/what-is-an-ethereum-keystore-file-86c8c5917b97
